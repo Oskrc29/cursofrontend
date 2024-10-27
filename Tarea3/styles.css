@@ -1,0 +1,197 @@
+
+/*Defino parametros generales*/
+body {
+    display: grid;
+    font-family: "Krub", sans-serif;
+    background-color: #1b232c;
+    color: #eceff1;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*=============================================================================*/
+/* Encabezado*/
+.header {
+    grid-column: 1 / -1;
+    background-color: #070707;
+    padding: 10px;
+}
+
+.header__logo-container {
+    display: flex;
+    align-items:end;
+    background-color:black;
+}
+
+.header__logo {
+    width: 70px; 
+    height: auto; 
+    margin-right: 10px;
+}
+
+.header__logo-text {
+    font-size: 50px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+
+/*=============================================================================*/
+/* Barra de navegacion */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:black;
+    grid-column: 1 / 2;
+}
+
+.navigation__link {
+    display: block;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.navigation__link:hover {
+    background-color: darkslategrey;
+    color: white;
+}
+
+@media (min-width: 768px ) {
+    .navigation {
+        flex-direction: row;
+    }
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/*=============================================================================*/
+/* Carrusel */
+
+.slider {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide img {
+    width: 80%; 
+    height: auto; 
+    margin: auto; 
+    display: block;
+}
+.slide img {
+    max-width: 80%; 
+    height: auto; 
+}
+.slide img {
+    width: auto; 
+    max-height: 500px; 
+    object-fit: cover; 
+}
+
+.boton{
+    text-align: center;
+}
+
+/*=============================================================================*/
+/* Pilares */
+.pilares {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.pilar {
+    flex: 1 1 200px;
+    padding: 20px;
+    background-color: #0f0f0f;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .pilares {
+        flex-direction: column;
+    }
+
+    header {
+        padding: 10px;
+    }
+}
+
+/*=============================================================================*/
+/* Secciones  y alineacines*/
+section {
+    margin-bottom: 20px;
+    background: #0f0f0f; 
+    padding: 15px;
+    border-radius: 5px; 
+    color: #fff; 
+}
+
+section a{
+    color:#eceff1;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.justificaparrafo
+{
+    text-align: justify;
+}
+
+.centrartitulo
+{
+    text-align:center;
+    color: #fff; 
+}
+.pilares {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.pilar {
+    background: #0f0f0f; 
+    color: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 20px; 
+    flex: 1; 
+    margin: 0 10px; 
+}
+
+.pilar h2 {
+    margin-top: 0; 
+}
+
+/*=============================================================================*/
+/* Pi de pagina */
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

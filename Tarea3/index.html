@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Academia Bros</title>
+</head>
+<body>
+
+<!-- Aplico grid-->
+
+    <div class="grid-container">
+        <!-- Defino cabecera aplicando BEM en el logo y texto-->
+        <div class="header__logo-container">
+            <img src="imagenes/logo.jpg" alt="logoacademia" class="header__logo">
+            <span class="header__logo-text">ACADEMIA BROS</span>
+        </div>  
+<!-- ***********************************************************************************************-->
+<!-- Aplico BEM en la barra de navegacion-->    
+
+    <div class="header__nav-bg">
+        <nav class="navigation">
+            <a href="#inicio" class="navigation__link">Inicio</a>
+            <a href="#acerca" class="navigation__link">Misión</a>
+            <a href="#vision" class="navigation__link">Visión</a>
+            <a href="#categorias" class="navigation__link">Categorías</a>
+            <a href="#contacto" class="navigation__link">Contacto</a>
+            <a href="#ubicacion" class="navigation__link">Ubicación</a>
+        </nav>
+    </div>
+<!-- ***********************************************************************************************-->
+<!-- Defino carrusel -->
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide active">
+                <img src="imagenes/sl1.jpg" alt="Imagen 1">
+            </div>
+            
+            <div class="slide">
+                <img src="imagenes/sl2.jpg" alt="Imagen 2">
+            </div>
+            
+            <div class="slide">
+                <img src="imagenes/sl3.jpg" alt="Imagen 3">
+            </div>
+            
+            <div class="slide">
+                <img src="imagenes/sl4.jpg" alt="Imagen 4">
+            </div>
+            
+            <div class="slide">
+                <img src="imagenes/sl5.jpg" alt="Imagen 5">
+            </div>
+        </div>
+
+        <div class="boton">
+            <button class="prev" onclick="cambiarSlide(-1)">&#10094;</button>
+            <button class="next" onclick="cambiarSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
+
+<script src="script.js"></script>
+<!-- ***********************************************************************************************-->
+<!-- Defino main -->    
+  </div>
+
+    <main>
+        <section id="acerca">
+            <h3>Nuestra Misión</h3>
+            <p class="justificaparrafo">
+                Nuestra misión es fomentar el desarrollo integral de los jóvenes a través de la práctica deportiva, promoviendo valores como el trabajo en equipo, la disciplina y el respeto. Nos comprometemos a brindar un entorno inclusivo y motivador donde cada atleta pueda descubrir su potencial, mejorar sus habilidades y disfrutar del deporte. Además, buscamos promover un estilo de vida saludable y activo, preparando a nuestros estudiantes no solo para competir, sino también para enfrentar los desafíos de la vida con confianza y resiliencia.</p>
+        </section>
+        
+        <section id="vision">
+            <h3>Nuesta Visión</h3>
+            <p class="justificaparrafo">
+                Nuestra visión es ser reconocidos como un referente en la formación deportiva y personal de jóvenes atletas, fomentando la excelencia en el deporte y en la vida. Aspiramos a crear un ambiente inclusivo y dinámico donde cada estudiante desarrolle sus habilidades deportivas, fortalezca su carácter y cultive una pasión por el deporte. Queremos inspirar a las futuras generaciones a alcanzar su máximo potencial, convirtiéndonos en un pilar de la comunidad y promoviendo un estilo de vida activo y saludable para todos.
+            </p>
+        </section>
+            
+        <section id="categorias">
+            <h3>Disciplinas Deportivas</h3>
+            <ul>
+                <li>Basket Ball</li>
+                <li>Volleiboll</li>
+                <li>Futbol</li>
+                <li>Beisbol</li>
+                <li>Natación</li>
+            </ul>
+        </section>
+        
+        <section id="contacto">
+            <h3>Contacto</h3>
+            <p>Puedes contactarme a través de: <a href="micorreo@correo.com">micorreo@correo.com</a></p>
+        </section>
+
+        <section id="ubicacion">
+            <h3>Ubicación</h3>
+            <p>Polideportivo Academia Bros</p>
+        </section>
+
+    </main>
+    <h2 class="centrartitulo">Valores de nuestra academia</h2>
+</main>
+<!-- ***********************************************************************************************-->
+<!-- Defino pilares -->    
+
+    <div class="pilares">
+        <div class="pilar">
+            <h4>Respeto: </h4>
+            <p>Fomentar el respeto entre los atletas, entrenadores, familiares y compañeros, valorando la diversidad y la inclusión.</p>
+        </div>
+        <div class="pilar">
+            <h4>Disciplina: </h4>
+            <p>Promover la responsabilidad y el compromiso hacia el entrenamiento, la práctica y el trabajo en equipo.</p>
+        </div>
+        <div class="pilar">
+            <h4>Trabajo en equipo:</h4>
+            <p>Valorar la colaboración y el esfuerzo conjunto, reconociendo que el éxito se logra mejorando como grupo.</p>
+        </div>
+        <div class="pilar">
+            <h4>Salud y bienestar:</h4>
+            <p>Promover un estilo de vida activo y saludable, enfatizando la importancia de la actividad física y la buena nutrición.</p>
+        </div>
+
+    </div>
+<!-- ***********************************************************************************************-->
+<!-- Defino pie de pagina -->    
+    <footer class="footer">
+            <p>&copy; 2024 Curso Front End. Todos los derechos reservados.</p>
+        </footer>
+<!-- ***********************************************************************************************-->
+</body>
+</html>
